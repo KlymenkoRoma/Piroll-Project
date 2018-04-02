@@ -1,0 +1,17 @@
+.clients_carousel_section {
+  height: 200px;
+}
+.clients_carousel_section .slick-slide {
+  background-color: #fff;
+  height: 200px;
+}
+.client_carousel_wrap {
+  position: relative;
+}
+.clients_carousel_item {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

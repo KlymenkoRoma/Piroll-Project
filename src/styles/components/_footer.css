@@ -1,0 +1,28 @@
+footer {
+  background-color: #141414;
+  color: #bcbcbc;
+  height: 200px;
+  position: relative;
+}
+footer h5 {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer a {
+  color: #bcbcbc;
+}
+footer a:hover,
+footer a:focus {
+  text-decoration: none;
+  color: #10c9c3;
+}
+.contCentr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,143 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .menu li {
+    padding: 0 10px;
+  }
+  .title_block {
+    text-align: center;
+  }
+  .stats_container {
+    text-align: left !important;
+  }
+  .stats_container .stats_block {
+    width: 49%;
+  }
+  .stats_container .stats_block .stats_img {
+    margin: 0 20px 0 110px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  nav {
+    height: 60px;
+    line-height: 60px;
+    background: #9fa8ad;
+    position: absolute;
+  }
+  .logo {
+    padding-top: 18px;
+  }
+  .menu_btn {
+    margin: 0;
+  }
+  .menu_btn .container .bar1,
+  .menu_btn .container .bar2,
+  .menu_btn .container .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #10c9c3;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-8px, 7px);
+  }
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  #top_menu {
+    background-color: #9fa8ad;
+    padding: 20px 0;
+    margin: 0;
+  }
+  .menu li {
+    display: block;
+    text-align: center;
+  }
+  .menu li a {
+    display: block;
+  }
+  .menu li a:hover {
+    background-color: #10c9c3;
+    color: #fff;
+  }
+  .title_block {
+    margin-top: 150px;
+    text-align: center;
+  }
+  .aboutUs_wrap {
+    width: 80%;
+  }
+  .skill_bars_sec {
+    width: 70%;
+    margin-left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .skill_bg {
+    opacity: 0.2;
+  }
+  .stats_section {
+    height: 270px !important;
+  }
+  .stats_section .stats_container {
+    text-align: center !important;
+  }
+  .stats_section .stats_container .stats_block .stats_info {
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .stats_section .stats_container .stats_block .stats_img {
+    margin: 0;
+  }
+  .video_title {
+    width: 80% !important;
+  }
+  .video_frame {
+    height: 200px !important;
+  }
+  .services-cont {
+    padding: 70px 50px !important;
+  }
+  .carousel_item {
+    width: 90% !important;
+  }
+  footer {
+    text-align: center !important;
+    height: 300px !important;
+  }
+  footer p {
+    margin: 20px 0 !important;
+  }
+  .contCentr {
+    width: 80%;
+  }
+  .linkJsf a {
+    display: block;
+  }
+  .mrgB {
+    margin-bottom: 0 !important;
+  }
+  .mrgT {
+    margin-top: 0 !important;
+  }
+  .contactHeader {
+    height: 60px;
+  }
+  .contactInfo {
+    text-align: center;
+  }
+  .btnCtr {
+    text-align: center;
+  }
+}

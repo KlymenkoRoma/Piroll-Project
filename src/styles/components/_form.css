@@ -1,0 +1,43 @@
+.form_section {
+  background-color: #F5F5F5;
+}
+.form_section h3 {
+  font-weight: bold;
+  margin: 100px 0 30px;
+}
+.form_section p {
+  margin-bottom: 30px;
+}
+.askForm {
+  margin: 100px 0;
+}
+.inpMgBt {
+  margin-bottom: 30px;
+}
+#comment {
+  resize: none;
+}
+.btnMgBt {
+  margin-bottom: 100px;
+}
+.contactInfo p {
+  margin-bottom: 12px;
+}
+.contactInfoP {
+  font-weight: bold;
+}
+.contactInfoP span,
+.contactInfoP a {
+  font-weight: normal;
+}
+.contactInfoP a {
+  color: black;
+}
+.contactInfoP a:hover,
+.contactInfoP a:focus {
+  text-decoration: none;
+  color: #10c9c3;
+}
+#map {
+  padding: 0 8% 100px;
+}

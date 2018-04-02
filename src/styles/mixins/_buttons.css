@@ -1,0 +1,14 @@
+.my_btn {
+  background-color: #10c9c3;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  padding: 17px 46px;
+}
+.my_btn:hover {
+  background-color: #0eb1ac;
+}
+.my_btn:focus {
+  outline: 0;
+}

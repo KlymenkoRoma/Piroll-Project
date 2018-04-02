@@ -1,0 +1,18 @@
+.services_section {
+  background-color: #F5F5F5;
+  text-align: center;
+}
+.services_section h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.services_section p {
+  color: #787878;
+}
+.services-cont {
+  padding: 70px 0;
+}
+.col_even {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

@@ -1,0 +1,10 @@
+.mainHeader {
+  height: 670px;
+  background-image: url('../images/banner.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.contactHeader {
+  height: 100px;
+  background-color: #fff;
+}

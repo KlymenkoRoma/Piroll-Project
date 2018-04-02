@@ -1,0 +1,20 @@
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+  padding: 0 30px;
+  font-weight: bold;
+}
+.menu li a {
+  text-transform: uppercase;
+  color: #1d1d1d;
+  font-size: 12px;
+}
+.menu li a:hover,
+.menu li a:focus {
+  text-decoration: none;
+  color: #10c9c3;
+}

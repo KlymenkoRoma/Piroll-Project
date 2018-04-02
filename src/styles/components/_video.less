@@ -1,0 +1,60 @@
+@import "../_vars";
+
+.video_title {
+  text-align: center;
+  width: 40%;
+  margin: 70px auto 35px;
+
+  h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+
+.video_frame {
+  margin-bottom: 70px;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background: url(../images/Video_Background.jpg);
+}
+
+.video_button {
+  width: 80px;
+  height: 80px;
+  background: @blue_main_color;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: height .3s, width .3s, box-shadow .3s ;
+}
+
+.triangleCtrl {
+  width: 10px;
+  height: 10px;
+  border-top: 10px solid transparent;
+  border-left: 20px solid #fff;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  transition: height .3s, width .3s, box-shadow .3s ;
+}
+
+.video_button:hover {
+  box-shadow: 0 0 20px 0 #000;
+  width: 90px;
+  height: 90px;
+  transition: height .3s, width .3s, box-shadow .3s;
+
+  .triangleCtrl {
+    border-top: 15px solid transparent;
+    border-left: 25px solid #787878;
+    border-bottom: 15px solid transparent;
+    transition: border-top .3s, border-left .3s, border-bottom .3s;
+  }
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!--<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="../node_modules/lightbox2/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="../node_modules/toastr/build/toastr.min.css">
+    <link rel="stylesheet" href="styles/main.css">-->
+
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+    <header class="mainHeader">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle collapsed menu_btn" data-toggle="collapse" data-target="#top_menu">
+                            <div class="container" onclick="myFunction(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </button>
+                        
+                        <a href="index.html" class="navbar-brand logo">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse navbar-right" id="top_menu">
+                        <ul class="menu">
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="#aboutUs_anchor">about</a></li>
+                            <li><a href="#works_anchor">work</a></li>
+                            <li><a href="#video_anchor">process</a></li>
+                            <li><a href="#services_anchor">services</a></li>
+                            <li><a href="#stats_anchor">testimonials</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <div class="title_block">
+                        <h1>We Design and Develop</h1>
+                        <p>We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
+                        <a href="contact.html" class="my_btn">contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="aboutUs_section" id="aboutUs_anchor">
+        <div class="container aboutUs_wrap">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="aboutUs_title">
+                        <h3>About Us</h3>
+                        <p>Divide have don't man wherein air fourth. Own itself make have night won't make. A you under Seed
+                            appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd
+                            won't very all.
+                        </p>
+                        <img src="images/signature.png" alt="signature">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill_section">
+        <div class="skill_bg"></div>
+        <div class="skill_bars_sec">
+            <h3>Proffesional Skills</h3>
+            <p>ui/ux design <span id="designCounter">0</span>%</p>
+            <div class="skill_bar_wrapper">
+                <div class="skill_bar designBar"></div>
+            </div>
+            <p>web development <span id="webCounter">0</span>%</p>
+            <div class="skill_bar_wrapper">
+                <div class="skill_bar webBar"></div>
+            </div>
+            <p>marketing <span id="marketCounter">0</span>%</p>
+            <div class="skill_bar_wrapper">
+                <div class="skill_bar marketingBar"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats_section" id="stats_anchor">
+        <div class="stats_container">
+            <div class="stats_block">
+                <img class="stats_img" src="images/proj_completed.png" alt="projects completed">
+                <div class="stats_info">
+                    <h5 id="projects_count">0</h5>
+                    <p>projects completed</p>
+                </div>
+            </div>
+            <div class="stats_block">
+                <img class="stats_img" src="images/work_hours.png" alt="working hours">
+                <div class="stats_info">
+                    <h5 id="hours_count">0</h5>
+                    <p>working hours</p>
+                </div>
+            </div>
+            <div class="stats_block">
+                <img class="stats_img" src="images/feedback.png" alt="positive feedbacks">
+                <div class="stats_info">
+                    <h5 id="feedback_count">0</h5>
+                    <p>positive feedbacks</p>
+                </div>
+            </div>
+            <div class="stats_block">
+                <img class="stats_img" src="images/happy_clients.png" alt="happy clients">
+                <div class="stats_info">
+                    <h5 id="clients_count">0</h5>
+                    <p>happy clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="works_section" id="works_anchor">
+        <div class="container-fluid">
+            <div class="row worksRow">
+                <div class="col-md-3 col-sm-6 col-xs-12 p0 template" style="display: none">
+                    <div class="work_block">
+                        <div class="image_wrap">
+                            <div class="work_descr">
+                                <a>
+                                    <img src="images/proj_look.png" alt="look">
+                                </a>
+                            </div>
+                        </div>
+                        <img class="img-responsive" alt="workItem">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 p0">
+                    <a class="load_work">load more work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video_section" id="video_anchor">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="video_title">
+                        <h3>Our Work Process</h3>
+                        <p>Was years it seasons was there form he in in them together over that,
+                            third sixth gathered female creeping bearing behold years.</p>
+                    </div>
+                    <div class="video_frame">
+                        <div class="video_button" onclick="videoplay(this)">
+                            <div class="triangleCtrl"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services_section" id="services_anchor">
+        <div class="container services-cont">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 col_even">
+                    <img src="images/services-diamond.png" alt="service">
+                    <h5>ui / ux design</h5>
+                    <p>Be set fourth land god darkness make it wherein own</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col_even">
+                    <img src="images/services-arc.png" alt="service">
+                    <h5>web development</h5>
+                    <p>A she'd them bring void moving third she'd kind fill</p>
+                </div>
+
+                <div class="clearfix visible-sm visible-xs"></div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col_even">
+                    <img src="images/services-phone.png" alt="service">
+                    <h5>app / mobile</h5>
+                    <p>Dominion man second spirit he, earth they're creeping</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col_even">
+                    <img src="images/services-joy.png" alt="service">
+                    <h5>game design</h5>
+                    <p>Morning his saying moveth it multiply appear life be</p>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col_even">
+                    <img src="images/services-plane.png" alt="service">
+                    <h5>SEO / marketing</h5>
+                    <p>Give won't after land fill creeping meat you, may</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col_even">
+                    <img src="images/services-star.png" alt="service">
+                    <h5>photography</h5>
+                    <p>Creepeth one seas cattle grass give moving saw give</p>
+                </div>
+
+                <div class="clearfix visible-sm visible-xs"></div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col_even">
+                    <img src="images/services-magic-wand.png" alt="service">
+                    <h5>graphic design</h5>
+                    <p>Open, great whales air rule for, fourth life whales</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col_even">
+                    <img src="images/services-paint-bucket.png" alt="service">
+                    <h5>illustrations</h5>
+                    <p>Whales likeness hath, man kind for them air two won't</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel_section">
+        <div class="carousel_cradle">
+            <div class="carousel_wrap">
+                <div class="carousel_item">
+                    <h3>“ Outstanding job and exceeded all expectations. It was a pleasure
+                        to work with them on a sizable first project and am looking
+                        forward to start the next one asap.”
+                    </h3>
+                    <p>Michael Hopkins</p>
+                </div>
+            </div>
+            <div class="carousel_wrap">
+                <div class="carousel_item">
+                    <h3>“ Outstanding job and exceeded all expectations. It was a pleasure
+                        to work with them on a sizable first project and am looking
+                        forward to start the next one asap.”
+                    </h3>
+                    <p>Michael Hopkins</p>
+                </div>
+            </div>
+            <div class="carousel_wrap">
+                <div class="carousel_item">
+                    <h3>“ Outstanding job and exceeded all expectations. It was a pleasure
+                        to work with them on a sizable first project and am looking
+                        forward to start the next one asap.”
+                    </h3>
+                    <p>Michael Hopkins</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients_carousel_section">
+        <div class="client_carousel_wrap">
+            <div class="clients_carousel_item">
+                <img src="images/client_1.png" alt="client">
+            </div>
+        </div>
+        <div class="client_carousel_wrap">
+            <div class="clients_carousel_item">
+                <img src="images/client_2.png" alt="client">
+            </div>
+        </div>
+        <div class="client_carousel_wrap">
+            <div class="clients_carousel_item">
+                <img src="images/client_3.png" alt="client">
+            </div>
+        </div>
+        <div class="client_carousel_wrap">
+            <div class="clients_carousel_item">
+                <img src="images/client_4.png" alt="client">
+            </div>
+        </div>
+        <div class="client_carousel_wrap">
+            <div class="clients_carousel_item">
+                <img src="images/client_1.png" alt="client">
+            </div>
+        </div>
+        <div class="client_carousel_wrap">
+            <div class="clients_carousel_item">
+                <img src="images/client_2.png" alt="client">
+            </div>
+        </div>
+    </section>
+
+    <section class="form_section">
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center">Need a Project?</h3>
+                <p class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 text-center">Let us know what you're looking for in an agency. We'll take a look and see
+                    if this could be the start of something beautiful.</p>
+                <div class="col-xs-8 col-xs-offset-2">
+                    <form action="#" name="askForm">
+                        <div class="row">
+                            <div class="form-group col-md-6 col-xs-12 inpMgBt">
+                                <input class="form-control" id="name" name="name" placeholder="Your Name*">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-12 inpMgBt">
+                                <input type="email" class="form-control" id="email" name="email"
+                                       placeholder="Your Email*">
+                            </div>
+                        </div>
+                        <div class="form-group inpMgBt">
+                            <input class="form-control" id="title" name="title" placeholder="Your Title*">
+                        </div>
+                        <div class="form-group inpMgBt">
+                            <textarea class="form-control" id="comment" placeholder="Your Comment" rows="6"></textarea>
+                        </div>
+                        <div class="form-group text-center btnMgBt">
+                            <button type="submit" class="my_btn">send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container contCentr">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Piroll Design, Inc.</h5>
+                    <p>&copy; 2017 Piroll. All rights reserved.
+                        Designed by robirurk.</p>
+                </div>
+                <div class="col-sm-3 col-md-2 col-md-offset-2">
+                    <p class="mrgB"><a href="mailto:hello@pirolltheme.com">hello@pirolltheme.com</a></p>
+                    <p class="mrgT">44 987 065 908</p>
+                </div>
+                <div class="col-xs-4 col-sm-1 col-sm-offset-1 linkJsf">
+                    <a href="#works_anchor">Projects</a>
+                    <a href="#aboutUs_anchor">About</a>
+                    <a href="#services_anchor">Services</a>
+                    <a href="index.html">Carreer</a>
+                </div>
+                <div class="col-xs-4 col-sm-1 linkJsf">
+                    <a href="index.html">News</a>
+                    <a href="index.html">Events</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="index.html">Legals</a>
+                </div>
+                <div class="col-xs-4 col-sm-1 col-sm-offset-1 linkJsf">
+                    <a href="index.html">Facebook</a>
+                    <a href="index.html">Twitter</a>
+                    <a href="index.html">Instagram</a>
+                    <a href="index.html">Dribbble</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <script src="../node_modules/countup.js/dist/countUp.min.js"></script>
+    <script src="../node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="../node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="../node_modules/toastr/build/toastr.min.js"></script>
+    <script src="js/main.js"></script>-->
+
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>

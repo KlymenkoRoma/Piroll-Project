@@ -1,0 +1,21 @@
+.title_block {
+  color: #1d1d1d;
+  margin-top: 200px;
+}
+.title_block h1 {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+.title_block p {
+  font-size: 18px;
+  color: #787878;
+  margin-bottom: 25px;
+}
+.title_block a {
+  display: inline-block;
+}
+.title_block a:hover,
+.title_block a:focus {
+  text-decoration: none;
+  color: #fff;
+}
