@@ -77,7 +77,8 @@ var
     $template = $(".template"),
     $worksRow = $(".worksRow"),
     imagesArr = [],
-    currArr = [];
+    maxElem = 8,
+    currElem = 0;
 
 loadImages();
 
@@ -99,28 +100,21 @@ function loadImages() {
             imagesArr.push(this.response[i].image);
         }
 
+        //-----for displaying only 8 images per page-----
         //$worksRow.empty();
 
-        for (var x = 0; x < 8; x++) {
+        for (currElem; currElem < maxElem; currElem++) {
             var $clone = $template.clone();
 
-            $clone.find('.img-responsive').attr("src", imagesArr[x]);
-            $clone.find('a').attr("href", imagesArr[x]);
+            $clone.find('.img-responsive').attr("src", imagesArr[currElem]);
+            $clone.find('a').attr("href", imagesArr[currElem]);
             $clone.find('a').attr("data-lightbox", "roadtrip");
 
             $clone.appendTo($worksRow);
             $clone.show();
-
-            currArr.push(imagesArr[x]);
         }
 
-        for (var ca = 0; ca < currArr.length; ca++) {
-            for (var ia = 0; ia < imagesArr.length; ia++) {
-                if (currArr[ca] === imagesArr[ia]) {
-                    imagesArr.splice(ia, 1);
-                }
-            }
-        }
+        maxElem += 8;
     });
 }
 

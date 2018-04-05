@@ -57,28 +57,41 @@ gulp.task("js", function () {
         .pipe(gulp.dest("dist/js"))
 });
 
+gulp.task("fonts", function () {
+    return gulp.src([
+        "node_modules/bootstrap/dist/fonts/*",
+        "node_modules/slick-carousel/slick/fonts/*"
+    ])
+        .pipe(gulp.dest("dist/css/fonts"))
+});
+
+gulp.task("vendor_images", function () {
+    return gulp.src("node_modules/slick-carousel/slick/ajax-loader.gif")
+        .pipe(gulp.dest("dist/css"))
+});
+
 gulp.task("json", function(){
     return gulp.src("src/images.json")
         .pipe(gulp.dest("dist"));
 });
 
 gulp.task("images", function(){
-    return gulp.src("src/images/*")
+    return gulp.src([
+        "src/images/*",
+        "node_modules/lightbox2/dist/images/*"
+    ])
         .pipe(gulp.dest("dist/images"));
 });
 
-gulp.task("watch", ["html", "app_less", "vendor_css", "js", "json", "images"], function () {
+gulp.task("watch", ["html", "app_less", "vendor_css", "js", "fonts", "json", "images", "vendor_images"], function () {
     sync.init({
         server: "dist"
     });
 
     gulp.watch("src/styles/**/*.less", ["app_less"]);
 
-    gulp.watch("src/index.html", ["html"]);
-    gulp.watch("dist/index.html").on("change", sync.reload);
-
-    gulp.watch("src/contact.html", ["html"]);
-    gulp.watch("dist/contact.html").on("change", sync.reload);
+    gulp.watch("src/*.html", ["html"]);
+    gulp.watch("dist/*.html").on("change", sync.reload);
 
     gulp.watch("src/js/*.js", ["js"]);
     gulp.watch("dist/js/*.js").on("change", sync.reload);
